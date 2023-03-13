@@ -6,7 +6,7 @@ const iframe = document.querySelector('#vimeo-player');
 const iframePlayer = new Player(iframe);
 
 // створимо конcтанту значення поточного місця
-const CURRENT_TIME_KEY = 'videoCurentTime';
+const CURRENT_TIME_KEY = 'videoplayer-current-time';
 
 // створимо функцію яка перевіряє наявність ключа в сховищі
 const checkTime = () => {
