@@ -30,6 +30,11 @@ form.addEventListener('submit', handleFormSubmit);
 
 function handleFormSubmit(event) {
   event.preventDefault();
+
+  // перевірка чи всі поля заповнені
+  if (emailEl.value === '' || messageEl.value === '') {
+    return alert('ERROR!!!  Please fill oll fields');
+  }
   const data = JSON.parse(localStorage.getItem(FORM_KEY));
   console.log(data);
   localStorage.removeItem(FORM_KEY);
